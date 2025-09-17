@@ -18,8 +18,8 @@
         {{-- ajout des roles --}}
         {{-- role --}}
         <div class="mt-4">
-            <x-input-label for="role" :value="__('Role')" />
-            <select name="role" id="role">
+            <x-input-label for="role" :value="__('Role')"/>
+            <select class="w-full"  name="role" id="role" required>
                 <option @readonly(true)>...</option>
                 <option value="employe">Employé</option>
                 <option value="employeur">Employeur</option>

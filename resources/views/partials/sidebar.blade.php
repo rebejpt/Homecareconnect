@@ -14,9 +14,14 @@
             @if(Auth::user()->role=== 'admin')
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="{{'admin.dashboard'}}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="/admin/users">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Utilisateurs</span></a>
                 </li>
 
             <!-- Divider -->
