@@ -9,9 +9,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [Dashboardcontroller::class,'dasboard'])
+Route::get('/admin/dashboard', [Dashboardcontroller::class,'adminDashboard'])
 ->middleware(['auth', 'verified'])
-->name('dashboard');
+->name('admin.dashboard');
+
+Route::get('/employe/dashboard', [Dashboardcontroller::class,'employeDashboard'])
+->middleware(['auth', 'verified'])
+->name('employe.dashboard');
+
+Route::get('/employeur/dashboard', [Dashboardcontroller::class,'employeurDashboard'])
+->middleware(['auth', 'verified'])
+->name('employeur.dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

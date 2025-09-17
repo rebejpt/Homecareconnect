@@ -11,16 +11,39 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
+            @if(Auth::user()->role=== 'admin')
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
+            @elseif(Auth::user()->role === 'employe')
+            <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            @elseif(Auth::user()->role === 'employeur')
+            <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            @endif
             <!-- Heading -->
             <div class="sidebar-heading">
                 Interface
