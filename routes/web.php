@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\Dashboardcontroller;
+use App\Http\Controllers\AjoutServiceController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,6 +22,19 @@ Route::prefix('admin')
     ->group(function(){
         Route::get('/dashboard',[Dashboardcontroller::class,'adminDashboard'])->name('admin.dashboard');
         Route::get('/users',[UserController::class,'getUsers']);
+        Route::get('/services',[ServiceController::class,'getServices']);
+
+        // Route pour afficher le formulaire (GET)
+        Route::get('/ajout_service', [AjoutServiceController::class, 'getAjoutServices'])->name('ajout_service');
+
+        // Route pour traiter le formulaire (POST)
+        Route::post('/ajout_service', [AjoutServiceController::class, 'store'])->name('ajout_service.store');
+
+        //Route::get('/ajout_service',[AjoutServiceController::class,'getAjoutServices']);
+        //Route::post('/ajout_service', [AjoutServiceController::class, 'store'])->name('ajout_service.store');
+        
+
+
 });
 
 Route::middleware(['role:employe'])-> get('/employe/dashboard', [Dashboardcontroller::class,'employeDashboard'])

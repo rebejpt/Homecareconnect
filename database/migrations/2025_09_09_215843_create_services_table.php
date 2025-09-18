@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nom');
             $table->text('description');
             $table->decimal('tarif');
+            $table->timestamps();
         });
 
         Schema::enableForeignKeyConstraints();

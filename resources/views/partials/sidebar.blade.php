@@ -18,10 +18,15 @@
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
-                 <li class="nav-item active">
+                <li class="nav-item active">
                     <a class="nav-link" href="/admin/users">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Utilisateurs</span></a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="/admin/services">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Services</span></a>
                 </li>
 
             <!-- Divider -->
