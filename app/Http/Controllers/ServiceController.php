@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class ServiceController extends Controller
 {
     //
+<<<<<<< HEAD
     //fonction pour avoir la liste des services
     public function getServices()
     {
@@ -72,4 +73,12 @@ class ServiceController extends Controller
         return redirect()->route('service.list');
     }
 
+=======
+     //
+    public function getServices()
+    {
+        $services = Service::all();
+        return view('admin.services', compact('services')) ;//la vue qui sera retourner
+    }
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
 }

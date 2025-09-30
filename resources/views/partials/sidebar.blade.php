@@ -24,7 +24,11 @@
                         <span>Utilisateurs</span></a>
                 </li>
                  <li class="nav-item active">
+<<<<<<< HEAD
                     <a class="nav-link" href="{{route('service.list')}}">
+=======
+                    <a class="nav-link" href="/admin/services">
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Services</span></a>
                 </li>
@@ -35,7 +39,11 @@
             @elseif(Auth::user()->role === 'employe')
             <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
+<<<<<<< HEAD
                     <a class="nav-link" href="{{ route('employe.dashboard') }}">
+=======
+                    <a class="nav-link" href="index.html">
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
@@ -46,6 +54,7 @@
             @elseif(Auth::user()->role === 'employeur')
             <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
+<<<<<<< HEAD
                     <a class="nav-link" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="white"><path d="M186.67-120q-27 0-46.84-19.83Q120-159.67 120-186.67v-586.66q0-27 19.83-46.84Q159.67-840 186.67-840h194q3.33-36.67 32-63.67 28.66-27 67.33-27t67.33 27q28.67 27 32 63.67h194q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H186.67ZM480-811.33q13 0 21.5-8.5t8.5-21.5q0-13-8.5-21.5t-21.5-8.5q-13 0-21.5 8.5t-8.5 21.5q0 13 8.5 21.5t21.5 8.5ZM186.67-226.67q58-55 132.43-88.16Q393.53-348 479.93-348t160.9 33.17q74.5 33.16 132.5 88.16v-546.66H186.67v546.66Zm294.66-200.66q58 0 98.34-40.34Q620-508 620-566t-40.33-98.33q-40.34-40.34-98.34-40.34T383-664.33Q342.67-624 342.67-566T383-467.67q40.33 40.34 98.33 40.34ZM250-186.67h460V-196q-50-42.33-108.33-63.83-58.34-21.5-121.67-21.5t-121.67 21.5Q300-238.33 250-196V-186.67ZM481.33-494q-30 0-51-21t-21-51q0-30 21-51t51-21q30 0 51 21t21 51q0 30-21 51t-51 21Zm-1.33-6.33Z"/></svg>
                         <span>Employés</span></a>
@@ -54,6 +63,11 @@
                     <a class="nav-link" href="index.html">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Placement</span></a>
+=======
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
                 </li>
 
             <!-- Divider -->

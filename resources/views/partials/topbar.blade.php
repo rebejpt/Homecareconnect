@@ -177,6 +177,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
+<<<<<<< HEAD
 
                                 @if(Auth::user()->role === 'employe')
                                     <a class="dropdown-item" href="{{route('employe.profile')}}">
@@ -189,6 +190,12 @@
                                         Profile
                                     </a>
                                 @endif
+=======
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings

@@ -12,12 +12,15 @@
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
+<<<<<<< HEAD
                     @if(session('success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             {{ session('success') }}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
+=======
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
 
                     <!-- Content Row -->
                     <div class="row">

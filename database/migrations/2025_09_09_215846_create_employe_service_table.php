@@ -13,21 +13,12 @@ return new class extends Migration
     {
         Schema::disableForeignKeyConstraints();
 
-        Schema::create('employes', function (Blueprint $table) {
+        Schema::create('employe_service', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('employe_id');
+            $table->foreign('employe_id')->references('id')->on('employes');
             $table->unsignedBigInteger('service_id');
-<<<<<<< HEAD
             $table->foreign('service_id')->references('id')->on('services');
-=======
->>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
-            $table->string('telephone');
-            $table->string('adresse');
-            $table->date('date_naissance');
-            $table->string('profil')->comment('Fonction principale');
-            $table->decimal('salaire');
-            $table->enum('statut', ["disponible","occuper","inactif"]);
             $table->timestamps();
         });
 
@@ -39,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('employes');
+        Schema::dropIfExists('employe_service');
     }
 };

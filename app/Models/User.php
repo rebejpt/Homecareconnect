@@ -4,7 +4,10 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Employe;
+<<<<<<< HEAD
 use App\Models\Employeur;
+=======
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -20,8 +20,11 @@ class RegisteredUserController extends Controller
     public function create(): View
     {
         return view('auth.register');
+<<<<<<< HEAD
 
         
+=======
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
     }
 
     /**
@@ -50,6 +53,7 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+<<<<<<< HEAD
         
         if(Auth::user()->role === 'admin'){
             return redirect()->route('admin.dashboard');
@@ -63,5 +67,8 @@ class RegisteredUserController extends Controller
 
 
         // return redirect(route('dashboard', absolute: false));
+=======
+        return redirect(route('dashboard', absolute: false));
+>>>>>>> 598353f290c1c58beeb1ed45306e4ef2cf1c3900
     }
 }
